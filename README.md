@@ -11,11 +11,6 @@ colorama: A library for adding colored output to the console.
 Usage
 Input Specifications: Users are prompted to enter the specifications of the car they want to search for. Specifications should be provided without leading or trailing white spaces. For example:
 
-mathematica
-Copy code
-Toyota Camry LE FWD Automatic
-BMW X3 xDrive30i
-AWD Honda Accord Hybrid Touring CVT
 Web Scraping: The script constructs a URL based on the user input specifications and sends an HTTP request to retrieve the HTML content of the TrueCar listings page. It then uses BeautifulSoup to parse the HTML and extract relevant information about used cars, such as their price and mileage.
 
 Database Connection and Insertion: The script establishes a connection to a MySQL database (credentials need to be provided) and inserts the extracted car information into a table named truecar. Each record includes the car's name (make and model), price, and mileage.
